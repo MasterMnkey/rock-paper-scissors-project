@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+    <h1 id="title-game">ROCK PAPER SCISSORS GAME</h1>
+    <!-- Menampilkan score -->
+    <div id="score" class="container">
+        <div id="human" class="score-box"> 
+            <img src="img/player.png" alt="player icon" class="player-icon"> 
+            <span id="human-score">0</span>
+        </div>
+        <p class="vs-text">vs</p>
+        <div id="computer" class="score-box"> 
+            <img src="img/computer.png" alt="computer icon" class="computer-icon"> 
+            <span id="computer-score">0</span>
+        </div>
+    </div>
+    <!-- Tombol pilihan pemain -->
+    <ul id="pick-hand" class="container">
+        <li><button id="rock" class="hand-button" disabled><img src="img/rock.png" alt="rock icon" class="icon"></button></li>
+        <li><button id="paper" class="hand-button" disabled><img src="img/paper.png" alt="paper icon" class="icon"></button></li>
+        <li><button id="scissors" class="hand-button" disabled><img src="img/scissors.png" alt="scissors icon" class="icon"></button></li>
+    </ul>
+    <!-- Output dari setiap ronde yang dimainkan -->
+    <div id="round-result" class="container"><span>Choose Your Hand!</span></div>
+    <!-- Tombol play harus di klik agar permainan bisa di mainkan -->
+    <div class="container"><button id="play-button" class="play-button">Play</button></div>
     <script src="script.js"></script>
 </body>
 </html>

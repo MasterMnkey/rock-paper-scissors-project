@@ -1,0 +1,121 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menentukan font dan warna dasar */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #282c34;
+    color: #61dafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Menata layout dasar */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+h1#title-game {
+    margin: 20px 0;
+    color: #61dafb;
+}
+
+#score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.score-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+img.player-icon,.computer-icon {
+    width: 50px;
+    height: 50px;
+}
+
+span {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+p.vs-text {
+    margin: 0 20px;
+    font-size: 24px;
+    color: #61dafb;
+}
+
+#pick-hand {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+}
+
+#round-result {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 3px solid #61dafb;
+    border-radius: 10px;
+    background-color: #20232a;
+    color: #61dafb;
+    width: 80%;
+    max-width: 600px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: #20232a;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+.hand-button {
+    background-color: transparent;
+    cursor: not-allowed;
+}
+
+.hand-button img {
+    width: 50px;
+    height: 50px;
+}
+
+.play-button {
+    background-color: #61dafb;
+    color: #20232a;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.play-button:hover {
+    background-color: #21a1f1;
+}
+
+.icon {
+    pointer-events: none; /* Ensure img does not block click events */
+}
